@@ -1,0 +1,127 @@
+/*
+Global styles for all LEGIDOX-related modules and views
+*/
+
+.legidox-bs-wrapper {
+    margin: 0 2rem 0;
+    height: 100%;
+    background: unset;
+}
+
+.legidox-tree {
+    --spacing: 1.5rem;
+    --radius: 10px;
+}
+
+.legidox-tree li{
+    display      : block;
+    position     : relative;
+    padding-left : calc(2 * var(--spacing) - var(--radius) - 2px);
+}
+
+.legidox-tree ul{
+    margin-left  : calc(var(--radius) - var(--spacing));
+    padding-left : 0;
+}
+
+#legidox-tagbuttons {
+    background: unset;
+}
+
+#legidox-tagbuttons a, #legidox-tagbuttons a:hover, #legidox-tagbuttons a:active, #legidox-tagbuttons a:focus {
+    text-decoration: none;
+    color: var(--ui-btn-color);
+}
+#legidox-tagbuttons a:hover {
+    color: var(--ui-btn-color-hover);
+}
+#legidox-tagbuttons a:active {
+    color: var(--ui-btn-color-active);
+}
+#legidox-tagbuttons a:focus {
+    color: var(--ui-btn-color-active);
+}
+
+.ld-zero-background {
+    background: unset;
+}
+
+.ld-zero-borders {
+    border: unset;
+}
+
+.ld-muted-text-color {
+    color: var(--ui-alert-color);
+}
+
+.ld-big-fa-icon {
+    font-size: xxx-large;
+}
+
+div.row.d-flex > .ld-upload-form {
+    max-width: 720px;
+}
+
+/* Bitrix overrides */
+.ui-toolbar-after-title, .main-ui-filter-search {
+    width: 100%;
+}
+
+.main-ui-filter-search {
+    border-radius: var(--main-ui-filter-search-border-radius, var(--ui-border-radius-2xs, 2px));
+}
+
+#disk-folder-list-toolbar {
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bx-disk-grid-left {
+    border: unset;
+    right: unset;
+}
+
+.workarea-content-paddings, .bx-disk-container, .bx-disk-grid-left {
+    height: 100%;
+}
+
+.ld-cursor-move {
+    cursor: move;
+}
+
+.ld-no-mb {
+    margin-bottom: 0 !important;
+}
+
+.ld-doc-owner-row {
+    background-color: #ffe5cc;
+}
+
+.bootstrap-iso span.ld-badge-user {
+    color: #1066bb;
+    background-color: #bcedfc !important;
+}
+
+.bootstrap-iso span.ld-badge-group {
+    color: #116f6b;
+    background-color: #ade7e4 !important;
+}
+
+.bootstrap-iso span.ld-badge-dept {
+    color: #535c69;
+    background-color: #e2e3e5 !important;
+}
+
+.bootstrap-iso ul.ld-watchers-list-horizontal > li {
+    display: inline-block;
+    margin-right: 0.3em;
+    margin-bottom: 0.3em;
+}
